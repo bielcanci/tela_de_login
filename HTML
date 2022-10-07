@@ -1,14 +1,16 @@
 
+
 <html lang="en">
 <head>
     <title>Document</title>
+    <script src="storage.js"></script>
 
 </head>
     <style>
       *{margin:0;padding:0;box-sizing: border-box; border-radius: 20px;}
       
       body{
-         background-color: #00A693;
+         background-color: 	#478778;
          
       }
 
@@ -38,9 +40,9 @@
 
       }
 
-      form input[type=submit]{
+      form button[type=submit]{
         width: 100%;
-        height: 30px;
+        height: 50px;
         cursor: pointer;
         background-color: #00A693;
         color: white;
@@ -48,6 +50,8 @@
         border-radius: 20px;
         transition: 1s;
       }
+
+
 
       form input[type=submit]:hover{
         background-color: #00755E;
@@ -59,40 +63,34 @@
       form input[type=password]:focus{
         outline: 0;
       }
+      
+      
+      
 
     </style>
 <body>
      <form>
-         <h3>Entrar</h3>
-         <input id="email" type="text" name="email" placeholder="Seu email..."/>
-         <input id="password" type="password" name="senha" placeholder="Sua senha..." />
-         <input type="submit" name="acao" value="Enviar" />
+        <form onsubmit="return false">
+            
+            <div class="container">
+            <label for="uname"><b>Email</b></label>
+            <input type="text" placeholder="Seu Email..." id= "uname" name="uname" required>
+
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Sua Senha..." id="psw" name="psw" required>
+            
+            <button type="submit" onclick="Login()">Login</button>
+        
+          </div>
 
 
      </form>
      <script>
 
-        var email = document.getElementById('email');
-        var password = document.getElementById('password')
+    
+    
 
-        email.addEventListener('focus',()=>{
-            email.style.borderColor = "#01796F";
-
-        });
-        email.addEventListener('blur',()=>{
-            email.style.borderColor = "#ccc";
-
-        });
-        password.addEventListener('focus',()=>{
-            password.style.borderColor = "#01796F";
-
-        });
-        password.addEventListener('blur',()=>{
-            password.style.borderColor = "#ccc";
-
-        });
-
-
+       
      </script>
 </body>
 
