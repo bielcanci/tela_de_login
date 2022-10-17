@@ -1,0 +1,105 @@
+
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="storage.js"></script>
+
+</head>
+
+    <style>
+      
+      *{margin:0;padding:0;box-sizing: border-box; border-radius: 20px;}
+      
+      body{
+         background-color: #323232;
+         
+      }
+
+      form{
+        background-color: #696969;
+        max-width: 500px;
+        width: 70%;
+        padding: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      form h3{
+        text-align: center;
+        color:#f1af09;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      }
+      form input[type=text],
+      form input[type=password]{
+        width: 100%;
+        height: 45px;
+        border: 1px solid #323232;
+        padding-left: 10px;
+        margin: 10px 0;
+
+      }
+
+     
+      
+      
+      form button {
+  color: white;
+  background: #323232;
+  transition: background 1s;
+  width: 100%;
+        height: 50px;
+        cursor: pointer;
+        border: 0;
+        border-radius: 20px;
+}
+
+button:hover,
+button:focus {
+  background: #f1af09;
+}
+
+
+      form input[type=submit]:hover{
+        background-color: #f1af09;
+
+      }
+      form input[type=text]:focus{
+        outline: 0;
+      }
+      form input[type=password]:focus{
+        outline: 0;
+      }
+      
+      
+      
+
+    </style>
+<body>
+     <form>
+        <form onsubmit="return false">
+            
+            <div class="container">
+            <label for="uname"><b></b></label>
+            <input type="text" placeholder="Seu Email..." id= "uname" name="uname" required>
+
+            <label for="psw"><b></b></label>
+            <input type="password" placeholder="Sua Senha..." id="psw" name="psw" required>
+            
+            <button type="submit" onclick="Login()">Login</button>
+        
+          </div>
+
+
+     </form>
+     <script>
+
+    
+    
+
+       
+     </script>
+</body>
+
+</html>
